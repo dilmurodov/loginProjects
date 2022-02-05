@@ -1,0 +1,296 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #f4f6fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.sign {
+  -webkit-box-shadow: 0 0 100px 3px rgba(172, 172, 172, 0.12);
+          box-shadow: 0 0 100px 3px rgba(172, 172, 172, 0.12);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 649px;
+  width: 1160px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign .left {
+  width: 60rem;
+  background-color: #2e5bff;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign .left img {
+  width: 90%;
+}
+
+.sign .right {
+  width: 560px;
+  position: relative;
+}
+
+.sign .right .exit {
+  position: absolute;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 3em;
+  top: 3em;
+  height: 3em;
+  width: 3em;
+  background-color: #f4f6fc;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.sign .right form {
+  padding: 7em 13em;
+}
+
+.sign .right form h1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.sign .right form .person {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign .right form .person a {
+  font-size: 1.6rem;
+  color: #707070;
+  margin-right: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #e0e7ff;
+}
+
+.sign .right form .person a:last-child {
+  border-bottom: 2px solid #2e5bff;
+  color: #2e384d;
+}
+
+.sign .right form .person a:hover {
+  border-bottom: 2px solid #2e5bff;
+}
+
+.sign .right form .name,
+.sign .right form .gender,
+.sign .right form .date,
+.sign .right form .info {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign .right form .name label {
+  color: #8c98a9;
+  font-size: 1.5rem;
+}
+
+.sign .right form .name input {
+  margin-top: 0.5rem;
+  border: 1px solid #e0e7ff;
+  border-radius: 5px;
+  padding: 0.7em;
+  background-color: #e0e7ff63;
+  font-size: 1.5rem;
+  color: #2e384d;
+}
+
+.sign .right form .gender {
+  position: relative;
+}
+
+.sign .right form .gender label {
+  color: #8c98a9;
+  font-size: 1.5rem;
+  width: 100%;
+  display: inline-block;
+}
+
+.sign .right form .gender select {
+  margin-top: 0.5rem;
+  border: 1px solid #e0e7ff;
+  border-radius: 5px;
+  padding: 0.7em;
+  font-size: 1.5rem;
+  background-color: #e0e7ff63;
+  color: #2e384d;
+  padding-right: 2.4em;
+}
+
+.sign .right form .date p {
+  color: #8c98a9;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sign .right form .date div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6em;
+}
+
+.sign .right form .date select {
+  border: 1px solid #e0e7ff;
+  border-radius: 5px;
+  padding: 0.7em;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: #e0e7ff63;
+  color: #2e384d;
+}
+
+.sign .right form .info label {
+  color: #8c98a9;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sign .right form .info input {
+  margin-top: 0.5rem;
+  border: 1px solid #e0e7ff;
+  border-radius: 5px;
+  padding: 0.7em;
+  background-color: #e0e7ff63;
+  font-size: 1.5rem;
+  color: #2e384d;
+}
+
+.sign .right form input[type=submit] {
+  margin-top: 2em;
+  display: inline-block;
+  width: 100%;
+  background-color: #2e5bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 3.6em;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.sign .right form .sign__in {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 3em;
+  color: #8C98A9;
+}
+
+.sign .right form .sign__in a {
+  color: #2e5bff;
+}
+
+.sign .right form .sign__in a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .sign {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sign .left {
+    height: 100%;
+    width: 100%;
+  }
+  .sign .left img {
+    margin-top: 10em;
+    padding-top: 5em;
+  }
+  .sign .right {
+    width: 100%;
+  }
+  .sign .right form {
+    background-color: #fff;
+    padding: 3em;
+  }
+}

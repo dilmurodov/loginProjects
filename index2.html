@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>login1</title>
+</head>
+
+<body>
+    <div class="sign">
+        <div class="left">
+            <img src="./images/sign__up1.png" alt="">
+        </div>
+        <div class="right">
+            <span class="exit">&#10005;</span>
+            <form method="post" action="">
+                <h1>Sign Up</h1>
+                <div class="person">
+                    <a href="#">Personal Info</a>
+                    <a href="#">Account Details</a>
+                </div>
+                <div class="email">
+                    <label for="email">Email ID</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="password">
+                    <label for="password">Create New Password</label>
+                    <input type="password" name="password" value="12345678910" id="password">
+                    <img class="iye" src="./images/iye.png" alt="">
+                </div>
+                <div class="phone">
+                    <p>Phone number (Optional)</p>
+                    <input id="phone" type="tel" name="phone" />
+                </div>
+                <div class="card">
+                    <label for="card">Credit Card Info</label>
+                    <div>
+                        <span>
+                            <img src="./images/visa.png" alt="">
+                        </span>
+                        <input placeholder="1234" type="number" name="" id="">
+                        <input placeholder="5678" type="number" name="" id="">
+                        <input placeholder="1234" type="number" name="" id="">
+                        <input placeholder="5678" type="number" name="" id="">
+                    </div>
+                </div>
+                <input type="submit" value="SUBMIT">
+                <span class="sign__in">Already Have An Account? <a href="#">Sign In</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });    
+</script>
+
+</html>
